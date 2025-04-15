@@ -33,7 +33,11 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-
+    
+    /* Tour der Wang Custom Colors */
+    --tour-orange: 25 100% 50%;
+    --tour-orange-dark: 20 100% 40%;
+    
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;

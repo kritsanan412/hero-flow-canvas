@@ -10,6 +10,26 @@ export default {
 	],
 	prefix: "",
 	theme: {
+		fontFamily: {
+			sans: ['Inter', 'sans-serif'],
+			display: ['Playfair Display', 'serif'],
+		},
+		extend: {
+			keyframes: {
+				"float": {
+					"0%, 100%": { transform: "translateY(0)" },
+					"50%": { transform: "translateY(-10px)" },
+				},
+				"pulse-subtle": {
+					"0%, 100%": { opacity: 1 },
+					"50%": { opacity: 0.8 },
+				},
+			},
+			animation: {
+				"float": "float 5s ease-in-out infinite",
+				"pulse-subtle": "pulse-subtle 3s ease-in-out infinite",
+			},
+		},
 		container: {
 			center: true,
 			padding: '2rem',
