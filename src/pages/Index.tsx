@@ -2,12 +2,25 @@
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import FloatingCrocodile from "@/components/FloatingCrocodile";
+import { NavMenuDemo } from "@/components/NavMenuDemo";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
       <HeroSection />
+      
+      {/* NavMenu Demo Section */}
+      <div className="container mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold mb-6 text-gray-800 font-display text-center">Customizable NavMenu Component</h2>
+        <p className="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">
+          A flexible navigation component that can be customized through props. Supports different variants,
+          user profiles, and interactive features like GitHub sync and chat mode.
+        </p>
+        <div className="mt-10 border rounded-lg overflow-hidden">
+          <NavMenuDemo />
+        </div>
+      </div>
       
       {/* Additional content sections can be added here */}
       <div className="container mx-auto px-4 py-20">
